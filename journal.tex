@@ -1,0 +1,36 @@
+\documentclass[11pt,maintoc]{combine}
+
+\title{ITU Journal}
+\author{ITU}
+\date{}
+
+\begin{document}
+	\pagestyle{combine}
+	\maketitle
+	\clearpage
+	
+	\tableofcontents
+	\clearpage
+	
+	\listoffigures
+	\clearpage
+	
+	\section{Editor’s introduction} \label{intro}
+	\begin{papers}
+		\coltoctitle{The First Article}
+		\coltocauthor{Author 1}
+		\label{article1}
+		\import{article1}
+		\coltoctitle{The Second Article}
+		\coltocauthor{Author 2}
+		\label{article2}
+		\import{article2}
+		\coltoctitle{The Third Article}
+		\coltocauthor{Author 3}
+		\label{article3}
+		\import{article3}
+	\end{papers}
+	\clearpage
+	\section{Acknowledgements}
+	Among the many ...
+\end{document}
